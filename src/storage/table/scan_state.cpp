@@ -18,10 +18,10 @@ TableScanState::~TableScanState() {
 	auto &info = GetFilterInfo();
 	auto &bfs = info.GetBloomFilterList();
 	
-	std::cout << "    \"num_bloom_filters_in_scan\": " << bfs.size() << "," << std::endl;
-	for (auto &bf : bfs) {
-		bf->PrintProbeStats();
-	}		
+	// std::cout << "    \"num_bloom_filters_in_scan\": " << bfs.size() << "," << std::endl;
+	// for (auto &bf : bfs) {
+	// 	bf->PrintProbeStats();
+	// }		
 }
 
 void TableScanState::Initialize(vector<StorageIndex> column_ids_p, optional_ptr<TableFilterSet> table_filters, optional_ptr<vector<unique_ptr<JoinBloomFilter>>> bloom_filters,

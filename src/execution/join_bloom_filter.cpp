@@ -266,10 +266,10 @@ void JoinBloomFilter::PrintBuildStats() const {
 }
 
 void JoinBloomFilter::PrintProbeStats() const {
-    // std::cout << "    \"selectivity\": " << GetObservedSelectivity() << "," << std::endl;
-    // std::cout << "    \"probed_keys\": " << GetNumProbedKeys() << "," << std::endl;
-    // std::cout << "    \"probe_time\": " << probe_time << "," << std::endl;
-    // std::cout << "    \"hash_time\": " << hash_time << "," << std::endl;
+    std::cout << "    \"selectivity\": " << GetObservedSelectivity() << "," << std::endl;
+    std::cout << "    \"probed_keys\": " << GetNumProbedKeys() << "," << std::endl;
+    std::cout << "    \"probe_time\": " << probe_time << "," << std::endl;
+    std::cout << "    \"hash_time\": " << hash_time << "," << std::endl;
 }
 
 } // namespace duckdb
