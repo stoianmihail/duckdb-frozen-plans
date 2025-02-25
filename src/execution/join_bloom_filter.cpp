@@ -257,19 +257,19 @@ bool JoinBloomFilter::ShouldStopProbing() const {
 }
 
 void JoinBloomFilter::PrintBuildStats() const {
-    std::cout << "    \"bf_num_hash_functions\": " << num_hash_functions << "," << std::endl;
-    std::cout << "    \"bf_size_bits\": " << bloom_filter_size << "," << std::endl;
-    std::cout << "    \"bf_scarcity\": " << GetScarcity() << "," << std::endl;
-    std::cout << "    \"bf_inserted_keys\": " << num_inserted_keys << "," << std::endl;
-    std::cout << "    \"bf_bitmask\": " << bitmask << "," << std::endl;
-    std::cout << "    \"build_time\": " << build_time << "," << std::endl;
+    // std::cout << "    \"bf_num_hash_functions\": " << num_hash_functions << "," << std::endl;
+    // std::cout << "    \"bf_size_bits\": " << bloom_filter_size << "," << std::endl;
+    // std::cout << "    \"bf_scarcity\": " << GetScarcity() << "," << std::endl;
+    // std::cout << "    \"bf_inserted_keys\": " << num_inserted_keys << "," << std::endl;
+    // std::cout << "    \"bf_bitmask\": " << bitmask << "," << std::endl;
+    // std::cout << "    \"build_time\": " << build_time << "," << std::endl;
 }
 
 void JoinBloomFilter::PrintProbeStats() const {
-    std::cout << "    \"selectivity\": " << GetObservedSelectivity() << "," << std::endl;
-    std::cout << "    \"probed_keys\": " << GetNumProbedKeys() << "," << std::endl;
-    std::cout << "    \"probe_time\": " << probe_time << "," << std::endl;
-    std::cout << "    \"hash_time\": " << hash_time << "," << std::endl;
+    // std::cout << "    \"selectivity\": " << GetObservedSelectivity() << "," << std::endl;
+    // std::cout << "    \"probed_keys\": " << GetNumProbedKeys() << "," << std::endl;
+    // std::cout << "    \"probe_time\": " << probe_time << "," << std::endl;
+    // std::cout << "    \"hash_time\": " << hash_time << "," << std::endl;
 }
 
 } // namespace duckdb
